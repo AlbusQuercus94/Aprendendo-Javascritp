@@ -1,0 +1,38 @@
+body{
+    background: rgb(0, 195, 255);
+    font-family: 'Alex Brush';
+}
+
+header{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+section{
+    background: cornsilk;
+    border-radius: 10px;
+    padding-right:8px; 
+    width: 500px;
+    margin:auto;
+    box-shadow: 5px 5px 10px 2px black;
+    
+}
+img{
+    align-content: center;
+}
+div{
+    text-align: center;
+    padding: 5px;
+    
+}
+div#msg{
+    font-size: 2.5em;
+}
+footer{
+    color: white;
+    text-align: center;
+    
+
+}

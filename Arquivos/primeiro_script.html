@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Script</title>
+    <style>
+        body{
+            background-color: aqua;
+            color:black;
+            font: normal 20pt Arial;
+        }
+        div{
+            background-color: brown;
+            color:chartreuse;
+            width: 200px;
+            heigth: 200px;
+            line-height: 200px;
+            text-align: center ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div >Clique em mim</div>
+    <script>
+        /*var a = document.getElementsByTagName('p')[0]
+        //a.innerHTML= "hoje é quinta feira"
+        var b = document.querySelector('div')
+        b.style.color = 'blue'*/
+        var c = document.getElementsByTagName('div')[0]
+        c.addEventListener('click',clicar)
+        c.addEventListener('mouseenter',entrar)
+        c.addEventListener('mouseout',sair)
+        function clicar(){
+            var a = document.getElementsByTagName('div')[0]
+            c.innerText = 'Clicou'
+        }
+        function sair(){
+            c.innerText = 'Saiu'
+        }
+        function entrar(){
+            c.innerText = 'Entrou'
+        }
+    </script>
+</body>
+</html>
